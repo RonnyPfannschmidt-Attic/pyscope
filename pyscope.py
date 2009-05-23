@@ -5,6 +5,13 @@
 
     lisp-alike scoped vars for python
 
+    >>> a = scoped(1)
+    >>> a == 1
+    True
+    >>> with scope(a, 2):
+    >>>     a == 2
+    True
+
 
     :copyright: 2009 by Ronny Pfannschmidt
     :license: MIT
